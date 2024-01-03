@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+}
+body{
+    background: #f4f4f4;
+}
+
+.navbar {
+    background-color: #333; /* change this to your preferred color */
+    overflow: hidden; /* hide the overflow of the navbar */
+}
+
+.navbar ul {
+    list-style-type: none; /* remove the bullets from the list */
+    margin: 0; /* remove the default margin */
+    padding: 0; /* remove the default padding */
+}
+  
+.navbar li {
+    float: left; /* align the list items horizontally */
+}
+  
+.navbar a {
+    display: block; /* make the links fill the entire list item */
+    color: #fff; /* change this to your preferred color */
+    text-align: center; /* center the text inside the links */
+    padding: 14px 16px; /* add some padding around the links */
+    text-decoration: none; /* remove the underline from the links */
+}
+  
+.navbar a:hover {
+    background-color: #ddd; /* change the background color of the links on hover */
+    color: #000; /* change the text color of the links on hover */
+}
+  
+.navbar a.active {
+    background-color: #04AA6D; /* change the background color of the active link */
+    color: #fff; /* change the text color of the active link */
+}
+
+.navbarc {
+    background-color: #333; /* change this to your preferred color */
+    overflow: hidden; /* hide the overflow of the navbar */
+}
+
+.navbarc ul {
+    list-style-type: none; /* remove the bullets from the list */
+    margin: 2; /* remove the default margin */
+    padding: 2; /* remove the default padding */
+}
+  
+.navbarc li {
+    float: left; /* align the list items horizontally */
+}
+  
+.navbarc a {
+    display: inline-block; /* make the links fill the entire list item */
+    color: #fff; /* change this to your preferred color */
+    text-align: center; /* center the text inside the links */
+    padding: 14px 16px; /* add some padding around the links */
+    text-decoration: none; /* remove the underline from the links */
+}
+  
+.navbarc a:hover {
+    background-color: #ddd; /* change the background color of the links on hover */
+    color: green; /* change the text color of the links on hover */
+}
+  
+.navbarc a.active {
+    background-color: #04AA6D; /* change the background color of the active link */
+    color: #fff; /* change the text color of the active link */
+}
+
+.navbara {
+    background-color: #333; /* change this to your preferred color */
+    overflow: hidden; /* hide the overflow of the navbar */
+}
+
+.navbara ul {
+    list-style-type: none; /* remove the bullets from the list */
+    margin: 2; /* remove the default margin */
+    padding: 2; /* remove the default padding */
+}
+  
+.navbara li {
+    float: left; /* align the list items horizontally */
+}
+  
+.navbara a {
+    display: inline-block; /* make the links fill the entire list item */
+    color: #fff; /* change this to your preferred color */
+    text-align: center; /* center the text inside the links */
+    padding: 14px 16px; /* add some padding around the links */
+    text-decoration: none; /* remove the underline from the links */
+}
+  
+.navbara a:hover {
+    background-color: #ddd; /* change the background color of the links on hover */
+    color: green; /* change the text color of the links on hover */
+}
+  
+.navbara a.active {
+    background-color: #04AA6D; /* change the background color of the active link */
+    color: #fff; /* change the text color of the active link */
+}
+
+audio:not([controls]) {
+    display: none !important;
+}
+
+audio {
+    width: 300px;
+    height: 54px;
+}

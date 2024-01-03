@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %}
+<title>contact</title>
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock css %}
+
+{% block body %}
+
+<!-- HTML code for the navbar -->
+    <div class="navbarc">
+        <ul>
+          <li><a href="{{ url_for('home') }}">Home</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+          <li><a href="{{ url_for('shop') }}"   >Shop</a></li>
+          <li><a href="{{ url_for('blog') }}"   >Blog</a></li>
+          <li><a href="{{ url_for('faq') }}"   >FAQ</a></li>
+        </ul>
+    </div>
+
+{% endblock body %}
+    

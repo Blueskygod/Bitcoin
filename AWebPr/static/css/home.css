@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Prompt', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100dvh;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+   /* background-image: "{{ url_for('static', filename=assets/background.jpg) }}"; */
+}
+body{
+    background: #f4f4f4;
+    min-height: 100vh;
+    background-clip: cover;
+    background-repeat: no-repeat;
+    background-position: center;  /* makes bcakground image fit in the bcakground */
+}
+
+nav{
+    
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li {
+    width: 100%;
+}
+.sidebar a {
+    width: 100%;
+
+}
+.sect {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #04AA6D;
+}
+.sect h1 {
+    text-align: center;
+    color: #04AA6D;
+    font-size: 50px;
+}
+
+.sect p {
+    text-shadow: #333;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.bitcoinimage img{
+    position: relative;
+    
+}
+
+
+
+
+
+.navbar {
+    background-color: #333; /* change this to your preferred color */
+    overflow: hidden;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    flex: 1;
+  }
+ 
+.menu ul {
+   display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+}
+  
+.menu ul li {
+    margin: 0 10px;
+}
+  
+.menu ul li a {
+    display: block; /* make the links fill the entire list item */
+    color: #fff; /* change this to your preferred color */
+    text-align: center; /* center the text inside the links */
+    padding: 14px 16px; /* add some padding around the links */
+    text-decoration: none; /* remove the underline from the links */
+}
+  
+.navbar a:hover {
+    background-color: #ddd; /* change the background color of the links on hover */
+    color: #000; /* change the text color of the links on hover */
+}
+  
+.navbar a.active {
+    background-color: #04AA6D; /* change the background color of the active link */
+    color: #fff; /* change the text color of the active link */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbarc {
+    background-color: #333; /* change this to your preferred color */
+    overflow: hidden; /* hide the overflow of the navbar */
+}
+
+.navbarc ul {
+    list-style-type: none; /* remove the bullets from the list */
+    margin: 2; /* remove the default margin */
+    padding: 2; /* remove the default padding */
+}
+  
+.navbarc li {
+    float: left; /* align the list items horizontally */
+}
+  
+.navbarc a {
+    display: inline-block; /* make the links fill the entire list item */
+    color: #fff; /* change this to your preferred color */
+    text-align: center; /* center the text inside the links */
+    padding: 14px 16px; /* add some padding around the links */
+    text-decoration: none; /* remove the underline from the links */
+}
+  
+.navbarc a:hover {
+    background-color: #ddd; /* change the background color of the links on hover */
+    color: green; /* change the text color of the links on hover */
+}
+  
+.navbarc a.active {
+    background-color: #04AA6D; /* change the background color of the active link */
+    color: #fff; /* change the text color of the active link */
+}
+
+.navbara {
+    background-color: #333; /* change this to your preferred color */
+    overflow: hidden; /* hide the overflow of the navbar */
+}
+
+.navbara ul {
+    list-style-type: none; /* remove the bullets from the list */
+    margin: 2; /* remove the default margin */
+    padding: 2; /* remove the default padding */
+}
+  
+.navbara li {
+    float: left; /* align the list items horizontally */
+}
+  
+.navbara a {
+    display: inline-block; /* make the links fill the entire list item */
+    color: #fff; /* change this to your preferred color */
+    text-align: center; /* center the text inside the links */
+    padding: 14px 16px; /* add some padding around the links */
+    text-decoration: none; /* remove the underline from the links */
+}
+  
+.navbara a:hover {
+    background-color: #ddd; /* change the background color of the links on hover */
+    color: green; /* change the text color of the links on hover */
+}
+  
+.navbara a.active {
+    background-color: #04AA6D; /* change the background color of the active link */
+    color: #fff; /* change the text color of the active link */
+}
+
+audio:not([controls]) {
+    display: none !important;
+}
+
+audio {
+    width: 300px;
+    height: 54px;
+}
+
+.logo {
+    width: 100px;
+  }
+  
+.logo img {
+    width: 100%;
+  }
+
+.buttons {
+    display: flex;
+  }
+  
+.buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+.buttons button:hover {
+    opacity: 0.8;
+  }
+  
+#login-btn {
+    background-color: #84e4e2;
+    color: white;
+  }
+  
+#register-btn {
+    background-color: white;
+    color: #84e4e2;
+  }
+
+  .ljvxhF {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: space-between;
+  }
+  
+  .kZzEcW {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .kZzEcW svg {
+    height: 32px;
+    object-fit: contain;
+    width: 32px;
+  }
+  .eROhll {
+    margin-bottom: 0px;
+    color: rgb(77, 91, 124);
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .cXhaHm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    max-width: 12rem;
+    padding: 0px;
+  }
+  
+  .biGnrt {
+    color: rgb(77, 91, 124);
+    transition: color 350ms ease 0s;
+  }

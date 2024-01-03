@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+{% block title %}
+<title>Shop</title>
+{% endblock title %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/shop.css') }}">
+{% endblock css %}
+
+{% block body %}
+<div class="welcome">
+  <div class="welcome-content">
+      <p>Please Reload the page if you button's aren't working</p>
+  </div>
+  <div class="welcome-btn">
+      <a href="{{ url_for('static', filename='js/btn.js') }}">F5</a>
+  </div>
+  <div>
+      <span class="span-btn" style="color:#000000">X</span>
+  </div>
+</div>
+<nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li><a href="{{ url_for('home')     }}">Home     </a></li>
+      <li><a href="{{ url_for('contact')  }}">Contact  </a></li>
+      <li><a href="{{ url_for('about') }}"   >About    </a></li>
+      <li><a href="{{ url_for('blog')     }}">Blog     </a></li>
+      <li><a href="{{ url_for('faq')      }}">FAQ      </a></li>
+      <li><a href="{{ url_for('login')    }}">Login    </a></li>
+      <li><a href="{{ url_for('register') }}">Register </a></li>
+    </ul>
+    <ul>
+      <li><a href="{{ url_for('home')     }}">Bitcoin Learn</a></li>
+
+      <li class="hideOnMobile"><a href="{{ url_for('home')     }}">Home        </a></li>
+      <li class="hideOnMobile"><a href="{{ url_for('contact')  }}">Contact     </a></li>
+      <li class="hideOnMobile"><a href="{{ url_for('about') }}"   >About</a></li>
+      <li class="hideOnMobile"><a href="{{ url_for('blog')     }}">Blog        </a></li>
+      <li class="hideOnMobile"><a href="{{ url_for('faq')      }}">FAQ         </a></li>
+      <li class= "menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  <section class="b-p">
+    <div class="form">
+        <h1> Paintings for Bitcoin Lover</h1>
+        <form method="post" enctype="multipart/form-data">
+            {{form.hidden_tag()}}
+            {{form.file()}}
+            {{form.submit()}}
+        </form>
+    </div>
+  </section>
+<div class="wrapper">
+  <div class="container">
+    <input type="radio" name="slide" id="c1" checked>
+    <label for="c1" class="card">
+      <div class="row">
+        <div class="icon">1</div>
+        <div class="description">
+          <h4>Winter</h4>
+          <p>winter has so much to offer creative activeties</p>
+        </div>
+      </div>
+    </label>
+    <input type="radio" name="slide" id="c2">
+    <label for="c2" class="card">
+      <div class="row">
+        <div class="icon">2</div>
+        <div class="description">
+          <h4>digital</h4>
+          <p>winter has so much to offer creative activeties</p>
+        </div>
+      </div>
+    </label>
+    <input type="radio" name="slide" id="c3">
+    <label for="c3" class="card">
+      <div class="row">
+        <div class="icon">3</div>
+        <div class="description">
+          <h4>warm</h4>
+          <p>winter has so much to offer creative activeties</p>
+        </div>
+      </div>
+    </label>
+    <input type="radio" name="slide" id="c4">
+    <label for="c4" class="card">
+      <div class="row">
+        <div class="icon">4</div>
+        <div class="description">
+          <h4>Spring</h4>
+          <p>winter has so much to offer creative activeties</p>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+<script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display='flex'
+    }
+    function hideSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display='none'
+    }
+  </script>
+{% endblock %}

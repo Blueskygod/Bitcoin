@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us" class="homepage" data-color-mode="auto" data-light-mode="auto" data-dark-mode="dark" data-ally-animated-images="system" data-ally-link-underlines="true">
+    <head>
+        {% block title %}
+        {% endblock title %}
+        <!-- Load the CSS file from the static folder -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" content="#1e2327">
+        <link rel="icon" href="{{ url_for('static',filename='assets/cb.ico' )}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
+        {% block css %}
+        {% endblock css %}
+        <!-- Load the JavaScript file from the static folder -->
+        {% block script %}
+        <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+        {% endblock script %}
+    </head>
+    <body>
+        {% block body %}
+        {% endblock body %}
+    </body>
+</html>

@@ -1,0 +1,125 @@
+*{
+  font-family: 'Poppins', sans serif;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.container{
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 0 15px;
+}
+span{
+  color: #fff;
+  font-size: small;
+  display: flex;
+  font-size: 55px;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+
+header{
+  color: #fff;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 10px 0;
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+}
+
+.input{
+  height: 45px;
+  width: 87%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  color: #fff;
+  padding: 0 0 0 45px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.submit{
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  height: 45px;
+  outline: none;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.submit:hover{
+  box-shadow: 1px 5px 7px 1px rgba(255, 255, 255, 0.2);
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: small;
+  color: #fff;
+  margin-top: 10px;
+}
+
+
+.ljvxhF {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.kZzEcW {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  text-align: center;
+}
+
+.kZzEcW svg {
+  height: 32px;
+  object-fit: contain;
+  width: 32px;
+}
+.eROhll {
+  margin-bottom: 0px;
+  color: rgb(77, 91, 124);
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 20px;
+  font-weight: 400;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.cXhaHm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
+  margin: -20px;
+  max-width: 12rem;
+  padding: 0px;
+}
+
+.biGnrt {
+  color: rgb(77, 91, 124);
+  transition: color 350ms ease 0s;
+}
