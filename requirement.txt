@@ -1,0 +1,9 @@
+Flask
+Gunicorn
+wtforms
+bs4
+flask_sqlalchemy
+flask_login
+flask_wtf
+werkzeug
+flask_bcrypt
